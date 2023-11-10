@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgb(212, 209, 209);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    border-radius: 30px;
+    height: 75vh;
+    margin-top: 4vh;
+    margin-bottom: 0vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+
+}
+
+.logo{
+    width: 60%;
+}
+.textoIniciar{
+    text-align: center;
+    color: rgb(54, 162, 225);
+    font-size: 200%;
+    font-weight: 700;
+    margin-bottom: 1vh;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    text-align: center;
+    
+    outline: none;
+    border:none
+}
+
+.contra:focus{
+    
+    border: 2.3px solid rgb(40, 188, 233);
+    
+}
+.usuario:focus{
+    
+    border: 2.3px solid rgb(40, 188, 233);
+    
+}
+
+
+
+
+
+
+
+
+
+.textoUsuario{
+    font-size: 140%;
+    margin-left: -70%;
+    color: rgb(94, 94, 101)
+}
+.textoContra{
+    font-size: 140%;
+    margin-left: -65%;
+    color: rgb(94, 94, 101)
+}
+.titulo{
+    font-size: 190%;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 4vh;
+    color: rgb(69, 69, 73);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    ;
+}
+.botonIngresar{
+    width: 38%;
+    height: 6vh;
+    border-radius: 20px;
+    border: none;
+    font-size: 130%;
+    background-color: rgb(40, 177, 227);
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
