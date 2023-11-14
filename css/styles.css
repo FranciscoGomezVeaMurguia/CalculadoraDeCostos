@@ -15,6 +15,7 @@ body {
     margin-bottom: 0vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    
 }
 
 h1 {
@@ -28,7 +29,7 @@ h1 {
 
 .logo{
     width: 60%;
-    margin-top: -4vh;
+    margin-top: -2vh;
 }
 .textoIniciar{
     text-align: center;
@@ -52,7 +53,8 @@ input[type="text"], input[type="password"] {
     text-align: center;
     
     outline: none;
-    border:none
+    border:none;
+    transition:0.5s
 }
 
 .contra:focus{
@@ -93,7 +95,7 @@ input[type="text"], input[type="password"] {
     margin-top: 4vh;
     color: rgb(69, 69, 73);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    ;
+    
 }
 .botonIngresar{
     width: 38%;
@@ -105,7 +107,7 @@ input[type="text"], input[type="password"] {
     color: white;
     cursor: pointer;
     font-weight: 700;
-    
+    margin-top: -1.9vh;
 }
 .datos{
     position: absolute;
