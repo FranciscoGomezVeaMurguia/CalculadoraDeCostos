@@ -7,7 +7,7 @@ body {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: rgb(212, 209, 209);
+    background-color: rgb(200, 205, 214);
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
     border-radius: 30px;
     height: 75vh;
@@ -28,6 +28,7 @@ h1 {
 
 .logo{
     width: 60%;
+    margin-top: -4vh;
 }
 .textoIniciar{
     text-align: center;
@@ -35,6 +36,7 @@ h1 {
     font-size: 200%;
     font-weight: 700;
     margin-bottom: 1vh;
+    margin-top: 1vh;
 }
 
 label {
@@ -45,7 +47,7 @@ label {
 input[type="text"], input[type="password"] {
     width: 80%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 34px;
     border-radius: 12px;
     text-align: center;
     
@@ -75,11 +77,13 @@ input[type="text"], input[type="password"] {
 .textoUsuario{
     font-size: 140%;
     margin-left: -70%;
+    font-weight: 700;
     color: rgb(94, 94, 101)
 }
 .textoContra{
     font-size: 140%;
     margin-left: -65%;
+    font-weight: 700;
     color: rgb(94, 94, 101)
 }
 .titulo{
@@ -101,4 +105,31 @@ input[type="text"], input[type="password"] {
     color: white;
     cursor: pointer;
     font-weight: 700;
+    
+}
+.datos{
+    position: absolute;
+    margin-top: -18.5vh;
+    margin-left: 17.7%;
+    font-size: 110%;
+    font-weight: 700;
+    color: rgb(255, 42, 0);
+    display: none;
+    
+}
+.usuarioVacio{
+    position: absolute;
+    margin-top: -32vh;
+    margin-left: 35.8%;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgb(82, 78, 78);
+    display: none;
+}
+.contraseñaVacio{
+    position: absolute;
+    margin-top: -15vh;
+    margin-left: 35.8%;
+    font-weight: 700;
+    text-shadow: 1px 0px 3px rgb(78, 79, 82);
+    display: none;
 }
