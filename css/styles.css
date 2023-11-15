@@ -36,8 +36,8 @@ h1 {
     color: rgb(54, 162, 225);
     font-size: 200%;
     font-weight: 700;
-    margin-bottom: 1vh;
-    margin-top: 1vh;
+    margin-bottom:3vh;
+    margin-top: -1vh;
 }
 
 label {
@@ -48,13 +48,14 @@ label {
 input[type="text"], input[type="password"] {
     width: 80%;
     padding: 10px;
-    margin-bottom: 34px;
-    border-radius: 12px;
+    margin-bottom: 30px;
+    border-radius: 15px;
     text-align: center;
     
     outline: none;
     border:none;
-    transition:0.5s
+    transition:0.5s;
+    border: 1.5px solid rgb(0, 204, 255);
 }
 
 .contra:focus{
@@ -107,7 +108,7 @@ input[type="text"], input[type="password"] {
     color: white;
     cursor: pointer;
     font-weight: 700;
-    margin-top: -1.9vh;
+    margin-top: -40vh;
 }
 .datos{
     position: absolute;

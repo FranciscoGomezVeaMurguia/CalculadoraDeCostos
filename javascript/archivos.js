@@ -13,7 +13,7 @@ function ingresar (){
     var contraseñaVacio = document.getElementById("contraseñaVacio")
 
     if(usuarioIngresado == usuario && contraseñaIngresada == contraseña){
-        window.location.href="https://www.primoffice.com.ar/"
+        window.location.href="calculadora.html"
     }
     else if ( usuarioIngresado == "" ){
     usuarioVacio.style.display="block"
@@ -48,8 +48,8 @@ function mostrar (){
 
     usuarioEstilos.style.boxShadow="none"
     contraseñaEstilos.style.boxShadow="none"
-    usuarioEstilos.style.border="none"
-    contraseñaEstilos.style.border="none"
+    usuarioEstilos.style.border="1.5px solid rgb(0, 204, 255)"
+    contraseñaEstilos.style.border="1.5px solid rgb(0, 204, 255)"
     datos.style.display="none"
     usuarioVacio.style.display="none"
     contraseñaVacio.style.display="none"
