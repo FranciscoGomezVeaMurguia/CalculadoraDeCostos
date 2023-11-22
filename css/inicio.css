@@ -1,0 +1,101 @@
+ header {
+    background-color: rgb(0, 191, 255);
+    padding: 20px;
+    text-align: center;
+  }
+  header ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  header ul li:last-child {
+    margin-right: 0;
+  }
+
+  header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+     }
+
+.container{
+    
+    background-color: rgb(0, 191, 255);
+}
+
+
+.logoPrim{
+    width: 1%;
+    position: relative;
+    top: 20px;
+    left: 300px;
+
+}
+
+.logoCalc{
+    width: 14%;
+    position: relative;
+    top: 20px;
+    left: 20px;
+   }
+
+.contenedor{
+    width: 15%;
+    height: 5vh;
+    border-radius: 15px;
+    border: none;
+    font-size: 103%;
+    font-weight: 700;
+    margin-left: 1%;
+    outline: none;
+    border:2px solid rgb(30, 186, 210); 
+    text-align: center;
+}
+
+
+
+
+.calcular{
+    width: 15%;
+    height: 5.2vh;
+    position: relative;
+    top: 50px;
+    left: 500px;
+    background-color: rgb(45, 184, 230);
+    border:none;
+    border-radius: 15px;
+    border-bottom: 3px solid rgb(0, 149, 255);
+    margin-top: 5vh;
+    font-size: 120%;
+    font-weight: 700;
+    color: rgb(250, 251, 251);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.4s;
+}
+.calcular:hover{
+    box-shadow: 0px 0px 3px 3px rgb(0, 221, 255);
+}
+
+.guardar{
+    width: 15%;
+    height: 5.2vh;
+    position: relative;
+    top: 500px;
+    left: 800px;
+    background-color: rgb(45, 184, 230);
+    border:none;
+    border-radius: 15px;
+    border-bottom: 3px solid rgb(0, 149, 255);
+    margin-top: 5vh;
+    font-size: 120%;
+    font-weight: 700;
+    color: rgb(250, 251, 251);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.4s;
+}
+.guardar:hover{
+    box-shadow: 0px 0px 3px 3px rgb(0, 221, 255);
+}
