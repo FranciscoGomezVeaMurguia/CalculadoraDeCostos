@@ -34,10 +34,11 @@ h1 {
 .textoIniciar{
     text-align: center;
     color: rgb(54, 162, 225);
-    font-size: 200%;
+    font-size: 240%;
     font-weight: 700;
     margin-bottom:3vh;
     margin-top: -1vh;
+    font-family: 'Montserrat', sans-serif;
 }
 
 label {
@@ -56,6 +57,7 @@ input[type="text"], input[type="password"] {
     border:none;
     transition:0.5s;
     border: 1.5px solid rgb(0, 204, 255);
+    font-weight: 700;
 }
 
 .contra:focus{
@@ -81,13 +83,15 @@ input[type="text"], input[type="password"] {
     font-size: 140%;
     margin-left: -70%;
     font-weight: 700;
-    color: rgb(94, 94, 101)
+    color: rgb(94, 94, 101);
+    font-family: 'Montserrat', sans-serif;
 }
 .textoContra{
     font-size: 140%;
     margin-left: -65%;
     font-weight: 700;
-    color: rgb(94, 94, 101)
+    color: rgb(94, 94, 101);
+    font-family: 'Montserrat', sans-serif;
 }
 .titulo{
     font-size: 190%;
@@ -95,8 +99,7 @@ input[type="text"], input[type="password"] {
     text-align: center;
     margin-top: 4vh;
     color: rgb(69, 69, 73);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    font-family: 'Montserrat', sans-serif;
 }
 .botonIngresar{
     width: 38%;
@@ -109,30 +112,31 @@ input[type="text"], input[type="password"] {
     cursor: pointer;
     font-weight: 700;
     margin-top: -40vh;
+    font-family: 'Montserrat', sans-serif;
 }
 .datos{
     position: absolute;
     margin-top: -18.5vh;
-    margin-left: 17.7%;
+    margin-left: 19%;
     font-size: 110%;
     font-weight: 700;
     color: rgb(255, 42, 0);
     display: none;
-    
+    font-family: 'Montserrat', sans-serif;
 }
 .usuarioVacio{
     position: absolute;
-    margin-top: -32vh;
+    margin-top: -31vh;
     margin-left: 35.8%;
     font-weight: 700;
-    text-shadow: 1px 1px 3px rgb(82, 78, 78);
     display: none;
+    font-family: 'Montserrat', sans-serif;
 }
 .contraseñaVacio{
     position: absolute;
     margin-top: -15vh;
     margin-left: 35.8%;
     font-weight: 700;
-    text-shadow: 1px 0px 3px rgb(78, 79, 82);
     display: none;
+    font-family: 'Montserrat', sans-serif;
 }

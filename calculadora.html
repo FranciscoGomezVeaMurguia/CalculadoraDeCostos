@@ -1,22 +1,83 @@
 <!DOCTYPE html>
+<html>
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/calculadora.css">
+<script type="text/javascript" defer src="./javascript/funciones.js"></script>
+<title>Calculadora</title>
+</head>
 
-<html lang="es">
-    <head>
+<body>
+    <nav class="nav">
+        <img src="./imagenes/LogoPrim.png" class="logoPrim" alt="Logo de Primoffice">
+    </nav>
+    <div class="productos" id="agregar">
+        <div class="primerProducto">
+            <label for="producto" class="nombre" id="prod">Producto: 
+            <input type="text" id="primerProducto" class="producto">
+            </label>
+            <label for="costo" class="nombre">Costo unitario: </label>
+            <input type="number" id="primerCosto" class="costo">
+            <label for="cantidad" class="nombre">Cantidad: </label>
+            <input type="number" id="primerCantidad" class="cantidad" >
+        </div>
+
+        <div class="primerProducto">
+            <label for="producto" class="nombre" id="prod">Producto: 
+            <input type="text" id="segundoProducto" class="producto">
+            </label>
+            <label for="costo" class="nombre">Costo unitario: </label>
+            <input type="number" id="segundoCosto" class="costo">
+            <label for="cantidad" class="nombre">Cantidad: </label>
+            <input type="number" id="segundaCantidad" class="cantidad">
+        </div>
+
+        <div class="primerProducto">
+            <label for="producto" class="nombre" id="prod">Producto: 
+            <input type="text" id="tercerProducto" class="producto">
+            </label>
+            <label for="costo" class="nombre">Costo unitario: </label>
+            <input type="number" id="tercerCosto" class="costo">
+            <label for="cantidad" class="nombre">Cantidad: </label>
+            <input type="number" id="tercerCantidad" class="cantidad">
+        </div>
+
+        <div class="primerProducto">
+            <label for="producto" class="nombre" id="prod">Producto: 
+            <input type="text" id="cuartoProducto" class="producto">
+            </label>
+            <label for="costo" class="nombre">Costo unitario: </label>
+            <input type="number" id="cuartoCosto" class="costo">
+            <label for="cantidad" class="nombre">Cantidad: </label>
+            <input type="number" id="cuartaCantidad" class="cantidad">
+        </div>
+
+        <div class="primerProducto">
+            <label for="producto" class="nombre" id="prod">Producto: 
+            <input type="text" id="quintoProducto" class="producto">
+            </label>
+            <label for="costo" class="nombre">Costo unitario: </label>
+            <input type="number" id="quintoCosto" class="costo">
+            <label for="cantidad" class="nombre">Cantidad: </label>
+            <input type="number" id="quintaCantidad" class="cantidad">
+        </div>
+        
+        <div class="dolar">
+            <label class="preguntar">
+                ¿Que dolar vas a utilizar? :
+                <select id="dolares" class="seleccionar">
+                    <option value="Dolar tarjeta">Dolar tarjeta</option>
+                    <option value="Dolar oficial">Dolar oficial</option>
+                    <option value="Dolar blue">Dolar blue</option>
+                </select>
+            </label>
+        </div>
+        <button class="continuar"> Continuar </button>
+    </div>
+
     
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../CalculadoraDeCostos/css/cuadro-inicio.css">
-        <title>Calculadora</title>
-    </head>
 
-    <body>
-
-        <div class="correcto"> ¡SE INICIÓ SESIÓN CORRECTAMENTE!</div>
-        <section class="cuadro">
-            <img src="./imagenes/LogoPrim.png" class="logo" alt="Logo de PrimOffice">
-            
-            <div class="texto"> ¡BIENVENIDO A LA CALCULADORA DE COSTOS DE PRIMOFFICE! </div>
-        </section>
-    </body>
-    </html>
+</body>
+</html>

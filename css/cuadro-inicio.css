@@ -1,11 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    
     background-color: #f0f0f0;
 }
 
 
 .cuadro{
-
+    
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
@@ -21,20 +21,41 @@ body {
 }
 
 .logo{
-    width: 45%;
+    width: 40%;
 }
 .texto{
     font-size: 180%;
     font-weight: 580;
-    margin-top: 5vh;
+    margin-top: 7vh;
     color: rgb(69, 69, 73);
+    font-family: 'Montserrat', sans-serif;
 }
 .correcto{
     font-size: 190%;
-    font-weight: 700;
+    font-weight: 900;
     text-align: center;
     margin-top: 4vh;
-    color: rgb(69, 69, 73);
+    color: rgb(34, 179, 227);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    font-family: 'Montserrat', sans-serif;
+}
+.logoCalculadora{
+    width: 40%;
+    margin-top: -5vh;
+    height: 50vh;
+}
+.continuar{
+    position: absolute;
+    margin-top: 32vh;
+    width: 16%;
+    height: 7vh;
+    border-radius: 13px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(17, 168, 249);
+    font-size: 130%;
+    font-weight: 700;
+    color: white;
+    margin-left: -1.5%;
+    font-family: 'Montserrat', sans-serif;
 }

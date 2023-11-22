@@ -13,7 +13,7 @@ function ingresar (){
     var contraseñaVacio = document.getElementById("contraseñaVacio")
 
     if(usuarioIngresado == usuario && contraseñaIngresada == contraseña){
-        window.location.href="calculadora.html"
+        window.location.href="ingreso.html"
     }
     else if ( usuarioIngresado == "" ){
     usuarioVacio.style.display="block"
