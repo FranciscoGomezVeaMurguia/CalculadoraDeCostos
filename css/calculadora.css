@@ -3,10 +3,43 @@
 
     height: 12.9vh;
     background-color: rgb(0, 191, 255);
+    display: flex;
+}
+.inicioNav{
+    margin-left: 70%;
+    font-size: 130%;
+    font-weight: 700;
+    margin-top: 8vh;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+a:link{
+    color:black
+}
+a:visited{
+    color: black;
+}
+.registro{
+    margin-left: 4%;
+    font-size: 130%;
+    font-weight: 700;
+    margin-top: 8vh;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.inicioNav:hover{
+    text-shadow: 1px 1px 3px white;
+}
+.registro:hover{
+    text-shadow: 1px 1px 3px white;
 }
 
 body{
-    margin: 0px
+    margin: 0px;
+    background-image: url("../imagenes/imagen.jpeg");
+    background-position: left;
+    background-size: cover;
 }
 
 
@@ -26,7 +59,7 @@ body{
     position: absolute;
     margin-left: 5%;
     border-radius: 15px;
-    
+    box-shadow: 0px 0px 3px 1px rgb(140, 148, 151)
 }
 
 .primerProducto{
@@ -134,8 +167,11 @@ option{
     color: rgb(250, 251, 251);
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-    transition: 0.4s;
+    transition: 0.1s;
 }
 .continuar:hover{
     box-shadow: 0px 0px 3px 3px rgb(0, 221, 255);
+}
+.footer{
+    
 }
