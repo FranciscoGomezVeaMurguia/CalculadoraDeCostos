@@ -10,63 +10,65 @@
 </head>
 
 <body>
-    <header> 
+    <header>
         <nav> 
             <ul> 
+                <img src="./imagenes/image-removebg-preview (1) (1).png" alt="Logo calcu" class="logoCalc">
                 <li><a href="#">Inicio</a></li> 
                 <li><a href="#">Productos</a></li> 
                 <li><a href="#">Cuenta</a></li> 
+                <img src="./imagenes/primoffice.png" alt="Logo prim" class="logoPrim">
             </ul> 
         </nav> 
-    </header> 
-    <div class="container"> 
-        <img src="./imagenes/LogoPrim.png" alt="Logo prim" class="LogoPrim"> 
-        <img src="./imagenes/image-removebg-preview (1) (1).png" alt="Logo calcu" class="logoCalc">
+    </header>
+    
+    <div class="contenedor">
+        <div class="contenido">
+        
+            <label for="costo1" class="nombre">Tasa Estadistica
+            <input type="number" id="costo1" class="costo">
+        </label>
+
+            <label for="costo2" class="nombre">Derechos
+            <input type="number" id="costo2" class="costo">
+        </label>
 
     </div>
-
-    <div class="contenedor">
-        <div class="columna">
-
-            <label for="costo1">Tasa Estadistica</label>
-            <input type="number" id="costo1" name="costo1">
-
-            <label for="costo2">Derechos</label>
-            <input type="number" id="costo2" name="costo2">
-
-            <label for="costo3">IVA</label>
-            <input type="number" id="costo3" name="costo3">
-
-            <label for="costo4">Flete</label>
-            <input type="number" id="costo4" name="costo4">
+    <div class="contenido">
+            <label for="costo3" class="nombre">IVA
+            <input type="number" id="costo3" class="costo">
+        </label>
+            <label for="costo4" class="nombre">Flete
+            <input type="number" id="costo4" class="costo">
+        </label>
+    </div>
+<div class="contenido">
         
-        </div>
- 
-        <div class="columna">
+            <label for="costo5" class="nombre">Cargo terminal seguros
+            <input type="number" id="costo5" class="costo">
+        </label>
+            <label for="costo6" class="nombre">Servicio comex
+            <input type="number" id="costo6" class="costo">
+        </label>
+    </div>
+    <div class="contenido">
+            <label for="costo7" class="nombre">Comision Banco
+            <input type="number" id="costo7" class="costo">
+        </label>
+            <label for="costo8" class="nombre">TCA
+            <input type="number" id="costo8" class="costo">
 
-            <label for="costo5">Cargo terminal seguros</label>
-            <input type="number" id="costo5" name="costo5">
-
-            <label for="costo6">Servicio comex</label>
-            <input type="number" id="costo6" name="costo6">
-
-            <label for="costo7">Comision Banco</label>
-            <input type="number" id="costo7" name="costo7">
-
-            <label for="costo8">TCA</label>
-            <input type="number" id="costo8" name="costo8">
-        
-        </div>
-        
-        <div class="calcular">
+        </label>
+    </div>
+    <div>
         <button class="calcular"> Calcular </button>
-        </div>
-
-        <div class="guardar">
         <button class="guardar"> Guardar </button>
-        </div>
+    </div>
+    </div>
 </body>
+
 <footer>
     <p>&copy; 2023 PrimOffice. Todos los derechos reservados.</p>
 </footer>
+
 </html>
