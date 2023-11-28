@@ -7,66 +7,57 @@
 <link rel="stylesheet" href="./css/inicio.css">
 <script type="text/javascript" defer src="./javascript/inicio.js"></script>
 <title>Inicio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <header> 
-        <nav> 
-            <ul> 
-                <li><a href="#">Inicio</a></li> 
-                <li><a href="#">Productos</a></li> 
-                <li><a href="#">Cuenta</a></li> 
-            </ul> 
-        </nav> 
-    </header> 
-    <div class="container"> 
-        <img src="./imagenes/LogoPrim.png" alt="Logo prim" class="LogoPrim"> 
-        <img src="./imagenes/image-removebg-preview (1) (1).png" alt="Logo calcu" class="logoCalc">
 
+    <div class="container"> 
+        <img src="./imagenes/LogoPrim.png" alt="Logo prim" class="logoPrim"> 
+        <div class="tituloNav">Calculadora de costos</div>
+        <button href="" class="registro">Historial de importaciones</button>
     </div>
 
     <div class="contenedor">
-        <div class="columna">
-
-            <label for="costo1">Tasa Estadistica</label>
-            <input type="number" id="costo1" name="costo1">
-
-            <label for="costo2">Derechos</label>
-            <input type="number" id="costo2" name="costo2">
-
-            <label for="costo3">IVA</label>
-            <input type="number" id="costo3" name="costo3">
-
-            <label for="costo4">Flete</label>
-            <input type="number" id="costo4" name="costo4">
+        
+        <div class="primero">
+            <label for="costo1" class="nombre">Tasa Estadistica: </label>
+            <input type="number" id="costo1" name="costo1" class="ingresar" placeholder="%">
+        <br>
+            <label for="costo2" class="nombre">Derechos: </label>
+            <input type="number" id="costo2" name="costo2" class="ingresar"
+            placeholder="%">
+        <br>
+            <label for="costo4" class="nombre">Flete Int: </label>
+            <input type="number" id="costo4" name="costo4" class="ingresar" placeholder="$">
+        <br>
+            <label for="costo3" class="nombre">IVA: </label>
+            <input type="number" id="costo3" name="costo3" class="ingresar" placeholder="%">
         
         </div>
- 
-        <div class="columna">
-
-            <label for="costo5">Cargo terminal seguros</label>
-            <input type="number" id="costo5" name="costo5">
-
-            <label for="costo6">Servicio comex</label>
-            <input type="number" id="costo6" name="costo6">
-
-            <label for="costo7">Comision Banco</label>
-            <input type="number" id="costo7" name="costo7">
-
-            <label for="costo8">TCA</label>
-            <input type="number" id="costo8" name="costo8">
-        
+        <div class="segundo">
+            <label for="costo5" class="nombre">Cargo terminal seguros: </label>
+            <input type="number" id="costo5" name="costo5" class="ingresar" placeholder="$">
+        <br>
+            <label for="costo6" class="nombre">Servicio comex: </label>
+            <input type="number" id="costo6" name="costo6" class="ingresar" placeholder="$">
+        <br>
+            <label for="costo7" class="nombre">Comision Banco: </label>
+            <input type="number" id="costo7" name="costo7" class="ingresar" placeholder="$">
+        <br>
+            <label for="costo8" class="nombre">TCA: </label>
+            <input type="number" id="costo8" name="costo8" class="ingresar" placeholder="%">
         </div>
         
-        <div class="calcular">
         <button class="calcular"> Calcular </button>
-        </div>
+    </div>
 
-        <div class="guardar">
-        <button class="guardar"> Guardar </button>
-        </div>
+
 </body>
-<footer>
-    <p>&copy; 2023 PrimOffice. Todos los derechos reservados.</p>
+<footer class="footer">
+    <p class="textoFooter"> 2023 PrimOffice. Todos los derechos reservados ©</p>
 </footer>
 </html>

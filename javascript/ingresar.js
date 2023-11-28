@@ -32,10 +32,10 @@ function ingresar (){
     }
     
     else{
-        usuarioEstilos.style.boxShadow="1px 1px 3px 1px rgb(238, 68, 7)"
-        contraseñaEstilos.style.boxShadow="1px 1px 3px 1px rgb(238, 68, 7)"
+        usuarioEstilos.style.boxShadow="0px 0px 4px 1.5px rgb(238, 68, 7)"
+        contraseñaEstilos.style.boxShadow="0px 0px 4px 1.5px rgb(238, 68, 7)"
         datos.style.display="block"
-
+        
     }
 }
 

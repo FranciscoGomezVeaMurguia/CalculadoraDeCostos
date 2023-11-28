@@ -1,78 +1,67 @@
 header {
     background-color: rgb(0, 191, 255);
-    padding: 20px;
+
     text-align: center;
     }
-    header ul li {
-    display: inline;
-    margin-right: 20px;
-    }
 
-    header ul li:last-child {
-    margin-right: 0;
-    }
 
-    header ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
+
+    body{
+        margin: 0;
+        background-image: url("../imagenes/imagen.jpeg");
     }
 
 .container{
     
     background-color: rgb(0, 191, 255);
+    height: 15vh;
+    display: flex;
+
 }
 
 
 .logoPrim{
-    width: 1%;
-    position: relative;
-    top: 20px;
-    left: 300px;
-
+    width: 15%;
+    position: absolute;
+    top: 2vh;
+    left: 1%;
+    height: 11vh;
 }
 
-.logoCalc{
-    width: 14%;
-    position: relative;
-    top: 20px;
-    left: 20px;
-    }
-
 .contenedor{
-    width: 15%;
-    height: 5vh;
+    width: 80%;
+    height: 70vh;
     border-radius: 15px;
     border: none;
-    font-size: 103%;
-    font-weight: 700;
-    margin-left: 1%;
+    
     outline: none;
     border:2px solid rgb(30, 186, 210); 
     text-align: center;
+    margin-top: 5vh;
+    margin-left: 19vh;
+    display: flex;
+    background-color: rgb(214, 221, 223);
+    font-family: 'Montserrat', sans-serif;
 }
 
 
-
-
 .calcular{
-    width: 15%;
-    height: 5.2vh;
-    position: relative;
-    top: 50px;
+    width: 30%;
+    height: 6vh;
+    margin-top: 60vh;
     left: 500px;
     background-color: rgb(45, 184, 230);
     border:none;
-    border-radius: 15px;
-    border-bottom: 3px solid rgb(0, 149, 255);
-    margin-top: 5vh;
-    font-size: 120%;
+    border-radius: 12px;
+    border-bottom: 4px solid rgb(0, 149, 255);
+    font-size: 130%;
     font-weight: 700;
     color: rgb(250, 251, 251);
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     transition: 0.4s;
+    margin-left: -4%;
+    position: absolute;
 }
 .calcular:hover{
     box-shadow: 0px 0px 3px 3px rgb(0, 221, 255);
@@ -99,3 +88,83 @@ header {
 .guardar:hover{
     box-shadow: 0px 0px 3px 3px rgb(0, 221, 255);
 }
+
+.ingresar{
+    width: 38%;
+    height: 5vh;
+    border-radius: 15px;
+    border: none;
+    font-size: 103%;
+    font-weight: 700;
+    margin-left: 4%;
+    outline: none;
+    border:2px solid rgb(30, 186, 210);
+    text-align: center;
+    margin-top: 7vh;
+    
+}
+
+.nombre{
+    font-size: 128%;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 3%;
+    
+}
+
+.primero{
+    margin-top: 1vh;
+    text-align: left;
+    margin-left: 5%;
+    width: 48%;
+}
+
+.segundo{
+    margin-top: 1vh;
+    text-align: left;
+    margin-left: -1%;
+}
+
+.registro{
+    font-size: 90%;
+    margin-left: 84%;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 4.5vh;
+    border: none;
+    background-color: rgb(214, 221, 223);
+    border-radius: 10px;
+    height: 5vh;
+    border-bottom: 3px solid grey;
+    cursor: pointer;
+}
+
+.registro:hover{
+    box-shadow: 0px 0px 3px 1.5px rgb(210, 217, 218);
+}
+
+.footer{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(179, 184, 185);
+    margin-top: 5vh;
+}
+
+.textoFooter{
+    position: absolute;
+    font-size: 110%;
+    font-weight: 700;
+    margin-top: 4vh;
+    margin-left: 4%;
+}
+.tituloNav{
+    margin-left: 40%;
+    font-size: 160%;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    width: 40%;
+    margin-top: 4.8vh;
+    color:white;
+    position: absolute;
+}
+
