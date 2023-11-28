@@ -1,0 +1,85 @@
+header {
+  background-color: rgb(0, 191, 255);
+  padding: auto;
+  height: 38vh;
+  width: 100%;
+}
+header ul li {
+  display: inline;
+  margin-right: 20px;
+
+}
+
+header ul li:last-child {
+  margin-right: 0;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #0e0c0c;
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+   }
+
+
+.logoPrim{
+    width: 30%;
+    position: absolute;
+    top: 20px;
+    left: 1070px;
+
+}
+
+.logoCalc{
+  width: 18%;
+  position: relative;
+  top: 1px;
+  right: 40px;
+   }
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gray-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 128%;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(45, 184, 230);
+    color: white;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+
+  }
