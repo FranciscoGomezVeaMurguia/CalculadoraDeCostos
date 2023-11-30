@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="./css/calculadora.css">
-<script type="text/javascript" defer src="./javascript/funciones.js"></script>
+<script type="text/javascript" defer src="./javascript/calculadora.js"></script>
 <title>Calculadora</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +19,25 @@
         <div class="tituloNav">Calculadora de costos</div>
         <button href="" class="registro">Historial de importaciones</button>
     </nav>
+    
+    <div class="cantidadProducto" id="cantidadProducto">
+        <p class="advertencia">Advertencia</p>
+        <p class="noProducto">¡No agregaste ninguna cantidad de producto!</p>
+        <button class="botonProducto" onclick="aceptarCantidad()">Aceptar</button>
+    </div>
+
+    <div class="costoProducto" id="costoProducto">
+        <p class="advertencia">Advertencia</p>
+        <p class="noProducto">¡No agregaste ningun costo de producto!</p>
+        <button class="botonProducto" onclick="aceptarCosto()">Aceptar</button>
+    </div>
+
+    <div class="nombreProducto" id="nombreProducto">
+        <p class="advertencia">Advertencia</p>
+        <p class="noProducto">¡No agregaste ningun nombre de producto!</p>
+        <button class="botonProducto" onclick="aceptarProducto()">Aceptar</button>
+    </div>
+
     <div class="productos" id="agregar">
         <div class="primerProducto">
             <label for="primerProducto" class="nombre" id="prod">Producto: 
@@ -80,7 +99,7 @@
                 </select>
             </label>
         </div>
-        <button class="continuar"> Continuar </button>
+        <button class="continuar" id="continuar" onclick="continuar()"> Continuar </button>
     </div>
     <footer class="footer">
         <div class="textoFooter">2023 PrimOffice. Todos los derechos reservados ©</div>

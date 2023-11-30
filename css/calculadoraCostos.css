@@ -14,18 +14,18 @@ header {
 .container{
     
     background-color: rgb(0, 191, 255);
-    height: 15vh;
+    height: 12.9vh;
     display: flex;
 
 }
 
 
 .logoPrim{
-    width: 15%;
-    position: absolute;
-    top: 2vh;
-    left: 1%;
-    height: 11vh;
+    width: 14%;
+    margin-left: 0%;
+    height: 10vh;
+    margin-top: 1.5vh;
+    margin-left: 2%;
 }
 
 .contenedor{
@@ -59,33 +59,11 @@ header {
     color: rgb(250, 251, 251);
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-    transition: 0.4s;
+    transition: 0.2s;
     margin-left: -4%;
     position: absolute;
 }
 .calcular:hover{
-    box-shadow: 0px 0px 3px 3px rgb(0, 221, 255);
-}
-
-.guardar{
-    width: 15%;
-    height: 5.2vh;
-    position: relative;
-    top: 500px;
-    left: 800px;
-    background-color: rgb(45, 184, 230);
-    border:none;
-    border-radius: 15px;
-    border-bottom: 3px solid rgb(0, 149, 255);
-    margin-top: 5vh;
-    font-size: 120%;
-    font-weight: 700;
-    color: rgb(250, 251, 251);
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    transition: 0.4s;
-}
-.guardar:hover{
     box-shadow: 0px 0px 3px 3px rgb(0, 221, 255);
 }
 
@@ -127,7 +105,7 @@ header {
 
 .registro{
     font-size: 90%;
-    margin-left: 84%;
+    margin-left: 69%;
     text-decoration: none;
     font-weight: 700;
     margin-top: 4.5vh;
@@ -163,8 +141,49 @@ header {
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     width: 40%;
-    margin-top: 4.8vh;
+    margin-top: 4vh;
     color:white;
     position: absolute;
 }
 
+.nombreCartel{
+    width: 40%;
+    height: 28vh;
+    background-color: rgb(0, 157, 255);
+    position: absolute;
+    z-index: 1;
+    margin-left: 20.8%;
+    border-radius: 15px;
+    text-align: center;
+    transition: 1.9s;
+    margin-top: 1vh;
+    border:3px solid rgb(243, 245, 246);
+    display: none;
+}
+
+.noCompleto{
+    font-size: 130%;
+    font-weight: 600;
+    color: rgb(244, 247, 248);
+    margin-top: -1vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.advertencia{
+    font-size: 170%;
+    font-weight: 700;
+    color: rgb(243, 245, 246);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2.8vh;
+}
+
+.botonCartel{
+    width: 24%;
+    height: 5vh;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 110%;
+    font-weight: 700;
+    border-bottom: 3px solid rgb(196, 200, 205);
+}

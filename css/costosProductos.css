@@ -1,33 +1,49 @@
-header {
+.nav{
   background-color: rgb(0, 191, 255);
-  padding: auto;
-  height: 38vh;
+  
+  height: 12.9vh;
   width: 100%;
 }
-header ul li {
-  display: inline;
-  margin-right: 20px;
 
+body{
+  margin: 0;
 }
-
-header ul li:last-child {
-  margin-right: 0;
-}
-
-header ul li a {
-  text-decoration: none;
-  color: #0e0c0c;
-  font-size: 22px;
-  font-family: 'Montserrat', sans-serif;
-   }
-
 
 .logoPrim{
-    width: 30%;
-    position: absolute;
-    top: 20px;
-    left: 1070px;
+    width: 14%;
+    margin-left: 0%;
+    height: 10vh;
+    margin-top: 1.5vh;
+    margin-left: 1%;
+}
+.registro{
+  font-size: 90%;
+  margin-left: 69%;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 4vh;
+  border: none;
+  background-color: rgb(214, 221, 223);
+  border-radius: 10px;
+  height: 5vh;
+  border-bottom: 3px solid grey;
+  cursor: pointer;
+  position: absolute;
+}
 
+.registro:hover{
+  box-shadow: 0px 0px 3px 1.5px rgb(210, 217, 218);
+}
+
+.tituloNav{
+  margin-left: 40%;
+  font-size: 160%;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  width: 30%;
+  margin-top: -8vh;
+  color:white;
+  position: absolute;
 }
 
 .logoCalc{
@@ -35,12 +51,7 @@ header ul li a {
   position: relative;
   top: 1px;
   right: 40px;
-   }
-
-
-body {
-    font-family: Arial, sans-serif;
-}
+  }
 
 .container {
     display: flex;

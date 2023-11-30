@@ -75,11 +75,11 @@ body{
 }
 
 .producto{
-    width: 17%;
+    width: 22%;
     height: 5vh;
     border-radius: 15px;
     border: none;
-    font-size: 60%;
+    font-size: 61%;
     font-weight: 700;
     margin-left: 1%;
     outline: none;
@@ -87,19 +87,50 @@ body{
     text-align: center;
 }
 
+.nombreProducto, .costoProducto, .cantidadProducto{
+    width: 40%;
+    height: 28vh;
+    background-color: rgb(0, 157, 255);
+    position: absolute;
+    z-index: 1;
+    margin-left: 30%;
+    border-radius: 15px;
+    text-align: center;
+    transition: 1.9s;
+    margin-top: 1vh;
+    border:3px solid rgb(243, 245, 246);
+    display: none;
+}
 
+.noProducto{
+    font-size: 130%;
+    font-weight: 600;
+    color: rgb(244, 247, 248);
+    margin-top: -1vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.advertencia{
+    font-size: 170%;
+    font-weight: 700;
+    color: rgb(243, 245, 246);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2.8vh;
+}
 
-
-
-
-
-
-
-
+.botonProducto{
+    width: 24%;
+    height: 5vh;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 110%;
+    font-weight: 700;
+    border-bottom: 3px solid rgb(196, 200, 205);
+}
 
 .costo{
-    width: 15%;
+    width: 10%;
     height: 5vh;
     border-radius: 15px;
     border: none;
@@ -112,7 +143,7 @@ body{
 }
 
 .cantidad{
-    width: 15%;
+    width: 10%;
     height: 5vh;
     border-radius: 15px;
     border: none;
@@ -155,7 +186,7 @@ option{
     font-weight: 500;
 }
 .continuar{
-    width: 25%;
+    width: 28%;
     height: 5.2vh;
     background-color: rgb(45, 184, 230);
     border:none;
@@ -167,10 +198,11 @@ option{
     color: rgb(250, 251, 251);
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-    
+    transition: 0.2s;
 }
+
 .continuar:hover{
-    box-shadow: 0px 0px 3px 1.9px rgb(219, 225, 226);
+    box-shadow: 0px 0px 3px 1.9px rgb(0, 205, 241);
 }
 .footer{
     width: 100%;

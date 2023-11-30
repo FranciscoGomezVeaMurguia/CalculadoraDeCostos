@@ -13,7 +13,7 @@ function ingresar (){
     var contraseñaVacio = document.getElementById("contraseñaVacio")
 
     if(usuarioIngresado == usuario && contraseñaIngresada == contraseña){
-        window.location.href="ingreso.html"
+        window.location.href="ingresoCorrecto.html"
     }
     else if ( usuarioIngresado == "" ){
     usuarioVacio.style.display="block"
@@ -35,7 +35,6 @@ function ingresar (){
         usuarioEstilos.style.boxShadow="0px 0px 4px 1.5px rgb(238, 68, 7)"
         contraseñaEstilos.style.boxShadow="0px 0px 4px 1.5px rgb(238, 68, 7)"
         datos.style.display="block"
-        
     }
 }
 
@@ -54,3 +53,33 @@ function mostrar (){
     usuarioVacio.style.display="none"
     contraseñaVacio.style.display="none"
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var botonUser = document.getElementById("username")
+var botonContra = document.getElementById("password")
+
+botonUser.addEventListener("keyup", function(e){
+if(e.keyCode === 13){
+    var boton = document.getElementById("boton")
+    boton.click()
+}
+})
+
+botonContra.addEventListener("keyup", function(e){
+    if(e.keyCode === 13){
+    var boton = document.getElementById("boton")
+    boton.click()
+    }
+    })
