@@ -1,3 +1,5 @@
+var dolarTarjeta = 0
+
 function continuar(){
 
 
@@ -79,3 +81,14 @@ function aceptarCantidad(){
     var cartel = document.getElementById("cantidadProducto")
     cartel.style.display="none"
 }
+
+fetch("https://dolarapi.com/v1/dolares/tarjeta")
+    .then(response => response.json())
+    .then(data => traerDolarTarjeta(data));
+
+    function traerDolarTarjeta(data){
+        dolarTarjeta = data.venta
+        alert(dolarTarjeta)
+    }
+    
+

@@ -13,8 +13,10 @@ if (tasa == "" || derechos == "" || costoFlete == "" || iva == ""
     || cargo == "" || comex == "" || banco == "" || tca == ""){
     var cartel = document.getElementById("nombreCartel")
     cartel.style.display="block"
+    } 
+    else {
+    window.location.href="costosProductos.html"
     }
-
 }
 
 function aceptar(){
