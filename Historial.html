@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/historial.css">
+<title>Historial</title>
+
+</head>
+
+<body>
+
+    <div class="header"> 
+        <img src="./imagenes/LogoPrim.png" alt="Logo prim" class="logoPrim"> 
+        <div class="tituloNav">Historial de Importaciones</div>
+    </div>
+
+    <div class="historial">
+        <label class="opciones">
+            Historial :
+            <select id="historiales" class="seleccion">
+                <option value="Producto">Mostrar Producto</option>
+                <option value="Detalle">Mostrar Detalle</option>
+                <option value="Otros">Mostrar Otros</option>
+                <option value="Totales">Mostrar Totales</option>
+            </select>
+        </label>
+    </div>
+
+    <div class="contenedor">
+
+        <div class="container">
+            <table>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Valor USD</th>
+                    <th>Total USD</th>
+                    <th>Total ARS</th>
+                </tr>
+                <tr>
+                    <td>Producto 1</td>
+                    <td>10</td>
+                    <td>$1,000</td>
+                </tr>
+                <tr>
+                    <td>Producto 2</td>
+                    <td>20</td>
+                    <td>$2,000</td>
+                </tr>
+                <tr>
+                    <td>Producto 3</td>
+                    <td>30</td>
+                    <td>$3,000</td>
+                </tr>
+                <tr>
+                    <td>Producto 4</td>
+                    <td>10</td>
+                    <td>$1,000</td>
+                </tr>
+                <tr>
+                    <td>Producto 5</td>
+                    <td>10</td>
+                    <td>$1,000</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+
+<footer class="footer">
+
+    <p class="textoFooter"> 2023 PrimOffice. Todos los derechos reservados ©</p>
+
+</footer>
+
+</html>
