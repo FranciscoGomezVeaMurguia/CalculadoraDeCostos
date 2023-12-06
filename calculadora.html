@@ -6,6 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="./css/calculadora.css">
 <script type="text/javascript" defer src="./javascript/calculadora.js"></script>
+<script type="text/javascript" defer src="./javascript/calculos.js"></script>
+<script type="text/javascript" defer src="./javascript/primerRevision.js"></script>
+<script type="text/javascript" defer src="./javascript/segundaRevision.js"></script>
+
 <title>Calculadora</title>
 <link rel="icon" type="image/jpg" href="https://cdn-icons-png.flaticon.com/128/2891/2891518.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +18,7 @@
 
 </head>
 
-<body>
+<body >
     <nav class="nav">
         <img src="./imagenes/LogoPrim.png" class="logoPrim" alt="Logo de Primoffice">
         <div class="tituloNav">Calculadora de costos</div>
@@ -100,7 +104,7 @@
                 </select>
             </label>
         </div>
-        <button class="continuar" id="continuar" onclick="continuar()"> Continuar </button>
+        <button class="continuar" id="continuar" onclick="continuar(),calcular()"> Continuar </button>
     </div>
     <footer class="footer">
         <div class="textoFooter">2023 PrimOffice. Todos los derechos reservados ©</div>

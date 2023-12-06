@@ -6,100 +6,62 @@ var dolarBlue = 0
 
 var dolarOficial = 0 
 
-function continuar(){
+//dolar seleccionado (valor)
+var dolarSelec = ""
 
-    //obtenemos los valores ingresados en el primer producto
-    var primerProducto = document.getElementById("primerProducto").value
-    var primerCosto = document.getElementById("primerCosto").value
-    var primerCantidad = document.getElementById("primerCantidad").value
+//dolar seleccionado (nombre)
+var dolar = ""
 
-    //obtenemos los valores ingresados en el segundo producto
-    var segundoProducto = document.getElementById("segundoProducto").value
-    var segundoCosto = document.getElementById("segundoCosto").value
-    var segundaCantidad = document.getElementById("segundaCantidad").value
+    // primer producto
+    var primerProducto = ""
+    var primerCosto = 0
+    var primerCantidad = 0
 
-    //obtenemos los valores ingresados en el tercer producto
-    var tercerProducto = document.getElementById("tercerProducto").value
-    var tercerCosto = document.getElementById("tercerCosto").value
-    var tercerCantidad = document.getElementById("tercerCantidad").value
+    // segundo producto
+    var segundoProducto = ""
+    var segundoCosto = 0
+    var segundaCantidad = 0
 
-    //obtenemos los valores ingresados en el cuarto producto
-    var cuartoProducto = document.getElementById("cuartoProducto").value
-    var cuartoCosto = document.getElementById("cuartoCosto").value
-    var cuartaCantidad = document.getElementById("cuartaCantidad").value
+    // tercer producto
+    var tercerProducto = ""
+    var tercerCosto = 0
+    var tercerCantidad = 0
 
-    //obtenemos los valores ingresados en el quinto producto
-    var quintoProducto = document.getElementById("quintoProducto").value
-    var quintoCosto = document.getElementById("quintoCosto").value
-    var quintaCantidad = document.getElementById("quintaCantidad").value
+    // cuarto producto
+    var cuartoProducto = ""
+    var cuartoCosto = 0
+    var cuartaCantidad = 0
 
-    //recibimos el dolar a utilizar que eligió el usuario
+    // quinto producto
+    var quintoProducto = ""
+    var quintoCosto = 0
+    var quintaCantidad = 0
 
-    var dolar = document.getElementById("dolares").value
-    var cantidadInput = "incorrecto"
-    var costoInput ="incorrecto"
-    var productoInput ="incorrecto"
-    //chequeamos que el usuario haya ingresado por lo menos un producto
-
-    if (primerCantidad == "" && segundaCantidad == "" && tercerCantidad == "" && cuartaCantidad == "" 
-    &&  quintaCantidad == ""){
-        var cartel = document.getElementById("cantidadProducto")
-        cartel.style.display="block"
-    }
-
-    if (primerCosto == "" && segundoCosto == "" && tercerCosto == "" && cuartoCosto == "" 
-    &&  quintoCosto == ""){
-        var cartel = document.getElementById("costoProducto")
-        cartel.style.display="block"
-    }
-
-    if (primerProducto == "" && segundoProducto == "" && tercerProducto == "" && cuartoProducto == "" 
-    &&  quintoProducto == ""){
-        var cartel = document.getElementById("nombreProducto")
-        cartel.style.display="block"
-    }
+    var primTotal = 0
+    var segTotal = 0
+    var terTotal = 0 
+    var cuarTotal = 0 
+    var quinTotal = 0 
     
-    // en caso de que haya ingresado un producto o mas le permitimos continuar
+    var primerTotal = 0
+    var segundoTotal = 0
+    var tercerTotal = 0 
+    var cuartoTotal = 0 
+    var quintoTotal = 0 
+    
+        
 
-    if (primerCantidad != "" || segundaCantidad != "" || tercerCantidad != "" || cuartaCantidad != "" 
-    ||  quintaCantidad != ""){
-        cantidadInput = "correcto"
-    }
+    //costos a sumar 
 
-    if (primerCosto != "" || segundoCosto != "" || tercerCosto != "" || cuartoCosto != "" 
-    ||  quintoCosto != ""){
-        costoInput = "correcto"
-    }
+    var tasaEstadistica = 0 
+    var derechos = 0
+    var flete = 0 
+    var iva = 0 
+    var seguros = 0 
+    var comex = 0 
+    var banco = 0 
+    var tca = 0  
 
-    if (primerProducto != "" || segundoProducto != "" || tercerProducto != "" || cuartoProducto != "" 
-    ||  quintoProducto != ""){
-        productoInput = "correcto"
-    }
-
-    // al presionar boton nos envia a la otra seccion de la calculadora
-
-    if(cantidadInput == "correcto" && costoInput == "correcto" && productoInput == "correcto"){
-        window.location.href="calculadoraCostos.html"
-    }
-
-    }
-
-//ocultar carteles de advertencia
-//advertencia input de producto vacio
-function aceptarProducto(){
-    var cartel = document.getElementById("nombreProducto")
-    cartel.style.display="none"
-}
-//advertencia input de costo vacio
-function aceptarCosto(){
-    var cartel = document.getElementById("costoProducto")
-    cartel.style.display="none"
-}
-//advertencia input de cantidad vacio
-function aceptarCantidad(){
-    var cartel = document.getElementById("cantidadProducto")
-    cartel.style.display="none"
-}
 
 //obtenemos el valor del dolar
 //dolar tarjeta
@@ -128,3 +90,5 @@ fetch("https://dolarapi.com/v1/dolares/tarjeta")
     function traerDolarOficial(data){
     dolarOficial = data.venta
     }
+    
+    

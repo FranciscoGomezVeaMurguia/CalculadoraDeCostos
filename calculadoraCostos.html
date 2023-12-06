@@ -5,7 +5,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="./css/calculadoraCostos.css">
-<script type="text/javascript" defer src="./javascript/calculadoraCostos.js"></script>
+<script type="text/javascript" defer src="./javascript/calculos.js"></script>
+<script type="text/javascript" defer src="./javascript/calculadora.js"></script>
+<script type="text/javascript" defer src="./javascript/segundaRevision.js"></script>
+<script type="text/javascript" defer src="./javascript/primerRevision.js"></script>
+
 <title>Calculadora</title>
 <link rel="icon" type="image/jpg" href="https://cdn-icons-png.flaticon.com/128/2891/2891518.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +18,7 @@
 
 </head>
 
-<body>
+<body >
 
     <div class="container"> 
         <img src="./imagenes/LogoPrim.png" alt="Logo prim" class="logoPrim"> 
@@ -59,7 +63,7 @@
             <input type="number" id="costo8" name="costo8" class="ingresar" placeholder="%">
         </div>
         
-        <button class="calcular" onclick="revisar()"> Calcular </button>
+        <button class="calcular" onclick="revisar(),calcularCostos()"> Calcular </button>
     </div>
 
 

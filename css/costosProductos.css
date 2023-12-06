@@ -161,3 +161,41 @@ body{
     font-weight: 700;
     margin-top: 1vh;
   }
+
+  
+
+
+
+
+  .guardar{
+    width: 28%;
+    height: 5.2vh;
+    background-color: rgb(45, 184, 230);
+    border:none;
+    border-radius: 12px;
+    border-bottom: 3px solid rgb(0, 149, 255);
+    margin-top: 5vh;
+    font-size: 120%;
+    font-weight: 700;
+    color: rgb(250, 251, 251);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.2s;
+    margin-left: 20%;
+  }
+
+  .volver{
+    width: 28%;
+    height: 5.2vh;
+    background-color: rgb(45, 184, 230);
+    border:none;
+    border-radius: 12px;
+    border-bottom: 3px solid rgb(0, 149, 255);
+    margin-top: 5vh;
+    font-size: 120%;
+    font-weight: 700;
+    color: rgb(250, 251, 251);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.2s;
+  }
