@@ -44,7 +44,7 @@ const app = initializeApp(firebaseConfig);
           });
     }
 
-    $("#btnsave").on('click',()=>{
+    document.querySelector("#btnsave").addEventListener("click", (event) => {
         let primerTotal = $("#primerTotal").val();
         let primerUnitarioTotal = $("#primerUnitarioTotal").val();
         let segundoTotal = $("#segundoTotal").val();
