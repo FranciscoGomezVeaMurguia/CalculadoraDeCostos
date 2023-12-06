@@ -1,20 +1,17 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyCW0Y881XfKogF4h7h9qIgP0iWw5PZ_hIU",
-      authDomain: "db-primoffice-1b784.firebaseapp.com",
-      databaseURL: "https://db-primoffice-1b784-default-rtdb.firebaseio.com",
-      projectId: "db-primoffice-1b784",
-      storageBucket: "db-primoffice-1b784.appspot.com",
-      messagingSenderId: "265780957690",
-      appId: "1:265780957690:web:9fa9725312f3f2cb41d443"
-    };
 
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCW0Y881XfKogF4h7h9qIgP0iWw5PZ_hIU",
+  authDomain: "db-primoffice-1b784.firebaseapp.com",
+  databaseURL: "https://db-primoffice-1b784-default-rtdb.firebaseio.com",
+  projectId: "db-primoffice-1b784",
+  storageBucket: "db-primoffice-1b784.appspot.com",
+  messagingSenderId: "265780957690",
+  appId: "1:265780957690:web:9fa9725312f3f2cb41d443"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
     
     const db = firebase.firestore();
 
