@@ -49,6 +49,10 @@ function calcular (){
         cuartoTotal = cuartoCosto * cuartaCantidad
         quintoTotal = quintoCosto * quintaCantidad
 
+        var aclaracion = primerTotal + segundoTotal + terTotal + cuartoTotal+ quintoTotal 
+        localStorage.setItem('aclaracion', aclaracion)
+        
+
         //guardamos las cantidades en local storage para usarlas luego
         localStorage.setItem('primerCantidad', primerCantidad)
         localStorage.setItem('segundaCantidad', segundaCantidad)
@@ -63,6 +67,17 @@ function calcular (){
         localStorage.setItem('tercerTotal', tercerTotal)
         localStorage.setItem('cuartoTotal', cuartoTotal)
         localStorage.setItem('quintoTotal', quintoTotal)
+
+
+
+        //guardamos los nombres en local storage para usarlos en los totales
+
+        localStorage.setItem('primerProducto', primerProducto)
+        localStorage.setItem('segundoProducto', segundoProducto)
+        localStorage.setItem('tercerProducto', tercerProducto)
+        localStorage.setItem('cuartoProducto', cuartoProducto)
+        localStorage.setItem('quintoProducto', quintoProducto)
+        
     }
 
 
@@ -105,6 +120,7 @@ function calcularCostos(){
     var montoSeguros = 0
     var montoComex = 0
     var montoBanco= 0
+    var montoTca = 0 
 
     //creamos una variable que vaya acumulando el resultado para poder obtener los porcentajes del monto principal
     var primerTotalGeneral = Number(primTotal)
@@ -351,27 +367,46 @@ function calcularCostos(){
         
     }
 
-    //agregamos tca a cada producto, se obtiene el porcentaje ingresado y se le suma al total
-    tca = tca / 100
-    suma = primTotal * tca
-    primTotal = Number(primTotal)
-    primerTotalGeneral = primerTotalGeneral + suma 
+    //agregamos tca a cada producto, se obtiene el monto ingresado y se le suma al total
+    //comprobamos cuantos productos hay y segun el resultado realizamos la suma de costos 
+    switch (productos) {
+        case 1:
+            montoTca = tca / productos
+            primerTotalGeneral = primerTotalGeneral + montoTca;
+            
+        break;
 
-    suma = segTotal * tca
-    segTotal = Number(segTotal)
-    segundoTotalGeneral = segundoTotalGeneral + suma
-    
-    suma = terTotal * tca
-    terTotal = Number(terTotal)
-    tercerTotalGeneral = tercerTotalGeneral + suma 
+        case 2:
+            montoTca = tca / productos
+            primerTotalGeneral = primerTotalGeneral + montoTca;
+            segundoTotalGeneral = segundoTotalGeneral + montoTca;
+        
+        break;
 
-    suma = cuarTotal * tca
-    cuarTotal = Number(cuarTotal)
-    cuartoTotalGeneral = cuartoTotalGeneral + suma
+        case 3:
+            montoTca = tca / productos
+            primerTotalGeneral = primerTotalGeneral + montoTca;
+            segundoTotalGeneral = segundoTotalGeneral + montoTca;
+            tercerTotalGeneral = tercerTotalGeneral + montoTca
+        break;
+        case 4:
+            montoTca = tca / productos
+            primerTotalGeneral = primerTotalGeneral + montoTca;
+            segundoTotalGeneral = segundoTotalGeneral + montoTca;
+            tercerTotalGeneral = tercerTotalGeneral + montoTca
+            cuartoTotalGeneral = cuartoTotalGeneral + montoTca
+        break;
+        case 5:
+            montoTca = tca / productos
+            primerTotalGeneral = primerTotalGeneral + montoTca;
+            segundoTotalGeneral = segundoTotalGeneral + montoTca;
+            tercerTotalGeneral = tercerTotalGeneral + montoTca
+            cuartoTotalGeneral = cuartoTotalGeneral + montoTca
+            quintoTotalGeneral = quintoTotalGeneral + montoTca;
+        
+    }
     
-    suma = quinTotal * tca
-    quinTotal = Number(quinTotal)
-    quintoTotalGeneral = quintoTotalGeneral + suma 
+
 
     
     localStorage.setItem('primerTotalGeneral', primerTotalGeneral)

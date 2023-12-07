@@ -187,8 +187,53 @@ option{
     font-size: 110%;
     background-color: rgb(204, 210, 212);
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
+    
 }
+
+
+.valoresDolar{
+    width: 20%;
+    height: 22vh;
+    background-color: rgb(45, 184, 230);
+    margin-left: 75%;
+    margin-top: -9vh;
+    border-radius: 15px;
+    position: absolute;
+    color: white;
+}
+
+.des{
+    text-align: center;
+    font-size: 110%;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 1vh;
+    font-weight: 700;
+}
+
+.dolarBlue, .dolarTarjeta, .dolarOficial{
+    display: flex;
+    font-size: 120%;
+    font-weight: 700;
+}
+
+.dolarBlue{
+    margin-top: -5vh;
+    margin-left: 29%;
+}
+.dolarTarjeta{
+    margin-top: -5vh;
+    margin-left: 29%;
+}
+.dolarOficial{
+    margin-left: 29%;
+    margin-top: -1vh;
+}
+
+#precioOficial, #precioBlue, #precioTarjeta{
+    margin-left: 8%;
+}
+
 .continuar{
     width: 28%;
     height: 5.2vh;

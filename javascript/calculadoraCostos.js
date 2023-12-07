@@ -1,4 +1,5 @@
 function revisar(){
+    
 var tasa = document.getElementById("costo1").value 
 
 var derechos = document.getElementById("costo2").value 
@@ -12,14 +13,18 @@ var tca = document.getElementById("costo8").value
 if (tasa == "" || derechos == "" || costoFlete == "" || iva == ""
     || cargo == "" || comex == "" || banco == "" || tca == ""){
     var cartel = document.getElementById("nombreCartel")
+    
     cartel.style.display="block"
+    
     } 
     else {
     window.location.href="costosProductos.html"
     }
+
 }
 
 function aceptar(){
     var cartel = document.getElementById("nombreCartel")
     cartel.style.display="none"
+    
 }

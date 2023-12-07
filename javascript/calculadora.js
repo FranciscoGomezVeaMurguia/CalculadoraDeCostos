@@ -71,6 +71,7 @@ fetch("https://dolarapi.com/v1/dolares/tarjeta")
 
     function traerDolarTarjeta(data){
     dolarTarjeta = data.venta
+    mostrarDolar()
     }
     
 //dolar blue
@@ -80,6 +81,7 @@ fetch("https://dolarapi.com/v1/dolares/tarjeta")
 
     function traerDolarBlue(data){
     dolarBlue = data.venta
+    mostrarDolar()
     }
 
 //dolar oficial
@@ -89,6 +91,15 @@ fetch("https://dolarapi.com/v1/dolares/tarjeta")
 
     function traerDolarOficial(data){
     dolarOficial = data.venta
+    mostrarDolar()
     }
+    function mostrarDolar(){
     
-    
+    var dolarBlueMostrar = document.getElementById("precioBlue")
+    var dolarTarjetaMostrar = document.getElementById("precioTarjeta")
+    var dolarOficialMostrar = document.getElementById("precioOficial")
+
+    dolarBlueMostrar.innerHTML = dolarBlue
+    dolarTarjetaMostrar.innerHTML= dolarTarjeta
+    dolarOficialMostrar.innerHTML= dolarOficial
+    }
