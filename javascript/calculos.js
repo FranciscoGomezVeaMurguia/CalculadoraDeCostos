@@ -2,6 +2,8 @@
 function calcular (){
     
     dolar = document.getElementById("dolares").value
+    localStorage.setItem("dolar", dolar)
+    
     //obtenemos el dolar seleccionado 
     if (dolar == "Dolar tarjeta"){
         dolarSelec = dolarTarjeta
@@ -78,6 +80,10 @@ function calcular (){
         localStorage.setItem('cuartoProducto', cuartoProducto)
         localStorage.setItem('quintoProducto', quintoProducto)
         
+        //guardamos valor de dolar
+        localStorage.setItem('dolarBlue', dolarBlue)
+        localStorage.setItem('dolarTarjeta', dolarTarjeta)
+        
     }
 
 
@@ -87,7 +93,7 @@ function calcularCostos(){
     
     
     
-
+    
     //obtenemos resultados de la sección anterior guardados en local storage
 
     primTotal = localStorage.getItem('primerTotal')
@@ -414,4 +420,6 @@ function calcularCostos(){
     localStorage.setItem('tercerTotalGeneral', tercerTotalGeneral)
     localStorage.setItem('cuartoTotalGeneral', cuartoTotalGeneral)
     localStorage.setItem('quintoTotalGeneral', quintoTotalGeneral)
+
+
 }

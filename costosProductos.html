@@ -7,7 +7,8 @@
     <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
     <script type="text/javascript" defer src="./javascript/mostrar.js"></script>
-    <script type="text/javascript" defer src="./javascript/firebase.js"></script>
+    <script type="text/javascript" defer src="./javascript/php.js"></script>
+    
     <link rel="icon" type="image/jpg" href="https://cdn-icons-png.flaticon.com/128/2891/2891518.png">
     <link rel="stylesheet" href="./css/costosProductos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +22,6 @@
         <nav class="nav"> 
             <img src="./imagenes/LogoPrim.png" alt="Logo prim" class="logoPrim">
             <div class="tituloNav">Calculadora de costos</div>
-            <button href="" class="registro">Historial de importaciones</button>
         </nav> 
     </header>
 
@@ -81,18 +81,17 @@
         <p class="descripcion">Este costo es el gasto total</p>
         <div class="costoGeneral" id="costoGeneral">4444</div>
         <div class="aclaracion">
-        <p class="blue">Blue/tarjeta:</p>
+        <p class="blue" id="dolar"></p>
         <div class="blueAclaracion" id="blueAclaracion">4444</div>
         <p class="oficial">Oficial:</p>
         <div class="oficialAclaracion" id="oficialAclaracion"></div>
         </div>
     </div>
     </section>
-    <button class="guardar" id="btnsave" onclick="guardar()">Guardar</button>
+
     <button class="volver" onclick="volver()">Volver a comenzar</button>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="./javascript/firebase.js"></script>
+
 
     <footer>
         <p class="textoFooter"> 2023 PrimOffice. Todos los derechos reservados ©</p>

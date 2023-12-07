@@ -211,22 +211,28 @@ body{
   font-weight: 7;
 }
 
-  .guardar{
-    width: 28%;
-    height: 5.2vh;
-    background-color: rgb(45, 184, 230);
-    border:none;
-    border-radius: 12px;
-    border-bottom: 3px solid rgb(0, 149, 255);
-    margin-top: 5vh;
-    font-size: 120%;
-    font-weight: 700;
-    color: rgb(250, 251, 251);
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    transition: 0.2s;
-    margin-left: 20%;
-  }
+.form{
+  width: 80%;
+  height: 12vh;
+  background-color: blue;
+  margin-left: 10%;
+  margin-top: 4vh;
+}
+
+.pasarTotalLabel{
+  font-size: 110%;
+}
+
+.pasarTotalPrimero{
+  width: 10%;
+  height: 4vh;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  
+}
+
+  
 
   .volver{
     width: 28%;
@@ -242,4 +248,5 @@ body{
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     transition: 0.2s;
+    margin-left: 34%;
   }

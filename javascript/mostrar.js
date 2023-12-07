@@ -155,23 +155,18 @@ var total = montoTotalPrimerProducto + montoTotalSegundoProducto + montoTotalTer
 //obtenemos la cantidad de productos
     var productos = 0  
 
-            if (montoTotalPrimerProducto != 0){
-                productos = productos + 1
-            }
-            if (montoTotalSegundoProducto != 0 ){
-                productos = productos + 1
-            }
-            if(montoTotalTercerProducto != 0){
-                productos = productos+1
-            }
-            if(montoTotalCuartoProducto != 0){
-                productos = productos+1
-            }
-            if( montoTotalQuintoProducto != 0){
-                productos = productos+1
-            }
+    primerCantidadMostrar = Number(primerCantidadMostrar)
+    segundaCantidadMostrar = Number(segundaCantidadMostrar)
+    tercerCantidadMostrar = Number(tercerCantidadMostrar)
+    cuartaCantidadMostrar = Number(cuartaCantidadMostrar)
+    quintaCantidadMostrar = Number(quintaCantidadMostrar)
+
+    productos = primerCantidadMostrar + segundaCantidadMostrar + tercerCantidadMostrar
+                + cuartaCantidadMostrar + quintaCantidadMostrar
 //mostramos  costo general unitario
 var totalGeneralUnitario = total / productos
+alert(productos)
+totalGeneralUnitario = totalGeneralUnitario.toFixed(4)
 localStorage.setItem("unitarioTotal", totalGeneralUnitario)
 unitarioTotalMostrar.innerHTML=totalGeneralUnitario
 
@@ -185,6 +180,10 @@ var blueAclaracion = document.getElementById("blueAclaracion")
 var dolarAclaracion = document.getElementById("oficialAclaracion")
 var aclaracion = localStorage.getItem('aclaracion')
 var blue = total - aclaracion
+var dolar = localStorage.getItem ("dolar")
+var dolarNuevo = document.getElementById("dolar")
+
+dolarNuevo.innerHTML = dolar
 blueAclaracion.innerHTML = blue
 dolarAclaracion.innerHTML = aclaracion
 }
@@ -194,4 +193,5 @@ traer()
 function volver(){
     localStorage.clear()
     window.location="calculadora.html"
+    
 }
