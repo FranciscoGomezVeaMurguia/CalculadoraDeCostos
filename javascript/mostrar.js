@@ -165,7 +165,7 @@ var total = montoTotalPrimerProducto + montoTotalSegundoProducto + montoTotalTer
                 + cuartaCantidadMostrar + quintaCantidadMostrar
 //mostramos  costo general unitario
 var totalGeneralUnitario = total / productos
-alert(productos)
+
 totalGeneralUnitario = totalGeneralUnitario.toFixed(4)
 localStorage.setItem("unitarioTotal", totalGeneralUnitario)
 unitarioTotalMostrar.innerHTML=totalGeneralUnitario
